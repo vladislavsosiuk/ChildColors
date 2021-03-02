@@ -17,7 +17,6 @@
 		DE257F0125EE5BE9006B6F63 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE257F0025EE5BE9006B6F63 /* ColorPicker.swift */; };
 		DE257F0625EE70AA006B6F63 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE257F0525EE70AA006B6F63 /* Coordinates.swift */; };
 		DE257F0A25EE7109006B6F63 /* CGRect+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE257F0925EE7109006B6F63 /* CGRect+Hashable.swift */; };
-		DE257F0E25EE7766006B6F63 /* DictionaryWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE257F0D25EE7766006B6F63 /* DictionaryWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +32,6 @@
 		DE257F0025EE5BE9006B6F63 /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
 		DE257F0525EE70AA006B6F63 /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
 		DE257F0925EE7109006B6F63 /* CGRect+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Hashable.swift"; sourceTree = "<group>"; };
-		DE257F0D25EE7766006B6F63 /* DictionaryWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				DE257F0525EE70AA006B6F63 /* Coordinates.swift */,
-				DE257F0D25EE7766006B6F63 /* DictionaryWrapper.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -208,7 +205,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE257EE025EE59A4006B6F63 /* ContentView.swift in Sources */,
-				DE257F0E25EE7766006B6F63 /* DictionaryWrapper.swift in Sources */,
 				DE257EDE25EE59A4006B6F63 /* ChildColorsApp.swift in Sources */,
 				DE257F0625EE70AA006B6F63 /* Coordinates.swift in Sources */,
 				DE257F0A25EE7109006B6F63 /* CGRect+Hashable.swift in Sources */,
