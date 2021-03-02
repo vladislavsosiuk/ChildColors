@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DE257EDE25EE59A4006B6F63 /* ChildColorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE257EDD25EE59A4006B6F63 /* ChildColorsApp.swift */; };
-		DE257EE025EE59A4006B6F63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE257EDF25EE59A4006B6F63 /* ContentView.swift */; };
 		DE257EE225EE59A4006B6F63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE257EE125EE59A4006B6F63 /* Assets.xcassets */; };
 		DE257EE525EE59A4006B6F63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE257EE425EE59A4006B6F63 /* Preview Assets.xcassets */; };
 		DE257EEF25EE59BC006B6F63 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE257EEE25EE59BC006B6F63 /* ColorCell.swift */; };
@@ -20,7 +19,6 @@
 /* Begin PBXFileReference section */
 		DE257EDA25EE59A4006B6F63 /* ChildColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChildColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE257EDD25EE59A4006B6F63 /* ChildColorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildColorsApp.swift; sourceTree = "<group>"; };
-		DE257EDF25EE59A4006B6F63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE257EE125EE59A4006B6F63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE257EE425EE59A4006B6F63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE257EE625EE59A4006B6F63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 				DE257EF125EE5AEA006B6F63 /* Grid */,
 				DE257EED25EE59AD006B6F63 /* ColorCell */,
 				DE257EDD25EE59A4006B6F63 /* ChildColorsApp.swift */,
-				DE257EDF25EE59A4006B6F63 /* ContentView.swift */,
 				DE257EE125EE59A4006B6F63 /* Assets.xcassets */,
 				DE257EE625EE59A4006B6F63 /* Info.plist */,
 				DE257EE325EE59A4006B6F63 /* Preview Content */,
@@ -182,7 +179,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE257EE025EE59A4006B6F63 /* ContentView.swift in Sources */,
 				DE257EDE25EE59A4006B6F63 /* ChildColorsApp.swift in Sources */,
 				DE257EFC25EE5BC7006B6F63 /* PlayCanvas.swift in Sources */,
 				DE257EEF25EE59BC006B6F63 /* ColorCell.swift in Sources */,

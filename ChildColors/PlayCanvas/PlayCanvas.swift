@@ -9,60 +9,71 @@ import SwiftUI
 
 struct PlayCanvas: View {
     
-    static var colors: [Color] = [
-        .green,
-        .blue,
-        .red,
-        .yellow,
-        .orange,
-        .pink,
-        .purple,
-        .white
-    ]
-    static var numberOfItems = 15
-    
-    @State private var selectedColor = Self.colors.first!
-    @State private var colorsState: [[Color]] = Array(repeating: Array(repeating: Color.white, count: numberOfItems), count: numberOfItems)
+    @State private var selectedColor = Constants.colors.first!
+    @State private var colorsState: [[Color]] = Array(repeating: Array(repeating: Color.white, count: Constants.numberOfCells), count: Constants.numberOfCells)
     @State private var cachedGridSize: CGSize?
     
     var body: some View {
         GeometryReader { geometry in
             VStack(spacing: 50) {
                 Spacer()
-                Grid(numberOfItems: Self.numberOfItems) { (row, column) in
+                Grid(numberOfItems: Constants.numberOfCells) { (row, column) in
                     ColorCell(color: colorsState[row][column])
                 }
+                .padding(gridSpacing)
                 .frame(height: gridSize(forGeometry: geometry).height)
                 .background(Color.gray)
-                .padding(2)
                 .border(Color.gray, width: 2)
                 .gesture(
                     DragGesture(minimumDistance: 0)
                         .onChanged { gesture in
-                            guard let cachedGridSize = cachedGridSize else { return }
-                            let point = gesture.location
-                            let oneCellHeight = cachedGridSize.height / CGFloat(Self.numberOfItems)
-                            let row = Int(point.y / CGFloat(oneCellHeight))
-                            let oneCellWidth = cachedGridSize.width / CGFloat(Self.numberOfItems)
-                            let column = Int(point.x / CGFloat(oneCellWidth))
-                            
-                            guard row < colorsState.count, column < colorsState[row].count else { return }
-                            colorsState[row][column] = selectedColor
+                            updateCell(forLocation: gesture.location)
                         }
                 )
-                ColorPicker(colors: Self.colors, selectedColor: $selectedColor)
+                ColorPicker(colors: Constants.colors, selectedColor: $selectedColor)
                 Spacer()
             }
-            .padding(20)
+            .padding(Constants.padding)
             .onAppear {
                 cachedGridSize = gridSize(forGeometry: geometry)
             }
         }
     }
     
-    func gridSize(forGeometry geometry: GeometryProxy) -> CGSize {
-        let side = geometry.size.width - 20 * 2
+    private func gridSize(forGeometry geometry: GeometryProxy) -> CGSize {
+        let side = geometry.size.width - Constants.padding * 2
         return CGSize(width: side, height: side)
+    }
+    
+    private func updateCell(forLocation location: CGPoint) {
+        guard let cachedGridSize = cachedGridSize else { return }
+        let oneCellHeight = cachedGridSize.height / CGFloat(Constants.numberOfCells)
+        let row = Int(location.y / CGFloat(oneCellHeight))
+        let oneCellWidth = cachedGridSize.width / CGFloat(Constants.numberOfCells)
+        let column = Int(location.x / CGFloat(oneCellWidth))
+        
+        guard row < colorsState.count, column < colorsState[row].count else { return }
+        colorsState[row][column] = selectedColor
+    }
+}
+
+// MARK: - Constants
+
+private extension PlayCanvas {
+    
+    enum Constants {
+        static let colors: [Color] = [
+            .green,
+            .blue,
+            .red,
+            .yellow,
+            .orange,
+            .pink,
+            .purple,
+            .white
+        ]
+        static let numberOfCells = 5
+        static let padding: CGFloat = 20
     }
 }
 
