@@ -52,7 +52,10 @@ struct PlayCanvas: View {
         let oneCellWidth = cachedGridSize.width / CGFloat(Constants.numberOfCells)
         let column = Int(location.x / CGFloat(oneCellWidth))
         
-        guard row < colorsState.count, column < colorsState[row].count else { return }
+        guard row >= 0,
+              column >= 0,
+              row < colorsState.count,
+              column < colorsState[row].count else { return }
         colorsState[row][column] = selectedColor
     }
 }
