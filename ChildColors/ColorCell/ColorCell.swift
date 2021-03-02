@@ -13,9 +13,6 @@ struct ColorCell: View {
     var shouldRoundCorners = false
     var selected = false
     
-    var parentCoordinateSpace: String?
-    var onFrameChanged: ((CGRect) -> Void)?
-    
     var body: some View {
         GeometryReader { geometry in
             Rectangle()
@@ -25,10 +22,6 @@ struct ColorCell: View {
                     RoundedRectangle(cornerRadius: cornerRadius(forHeight: geometry.size.height))
                         .stroke(Color.gray, lineWidth: selected ? 4 : 0)
                 )
-                .onAppear {
-                    guard let parentCoordinateSpace = parentCoordinateSpace else { return }
-                    onFrameChanged?(geometry.frame(in: .named(parentCoordinateSpace)))
-                }
         }
     }
     

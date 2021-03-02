@@ -15,8 +15,6 @@
 		DE257EF825EE5AFF006B6F63 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE257EF725EE5AFF006B6F63 /* Grid.swift */; };
 		DE257EFC25EE5BC7006B6F63 /* PlayCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE257EFB25EE5BC7006B6F63 /* PlayCanvas.swift */; };
 		DE257F0125EE5BE9006B6F63 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE257F0025EE5BE9006B6F63 /* ColorPicker.swift */; };
-		DE257F0625EE70AA006B6F63 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE257F0525EE70AA006B6F63 /* Coordinates.swift */; };
-		DE257F0A25EE7109006B6F63 /* CGRect+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE257F0925EE7109006B6F63 /* CGRect+Hashable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +28,6 @@
 		DE257EF725EE5AFF006B6F63 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		DE257EFB25EE5BC7006B6F63 /* PlayCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayCanvas.swift; sourceTree = "<group>"; };
 		DE257F0025EE5BE9006B6F63 /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
-		DE257F0525EE70AA006B6F63 /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
-		DE257F0925EE7109006B6F63 /* CGRect+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Hashable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +60,6 @@
 		DE257EDC25EE59A4006B6F63 /* ChildColors */ = {
 			isa = PBXGroup;
 			children = (
-				DE257F0825EE7100006B6F63 /* Extensions */,
-				DE257F0425EE70A1006B6F63 /* Model */,
 				DE257EFF25EE5BE2006B6F63 /* ColorPicker */,
 				DE257EFA25EE5BBD006B6F63 /* PlayCanvas */,
 				DE257EF125EE5AEA006B6F63 /* Grid */,
@@ -117,22 +111,6 @@
 				DE257F0025EE5BE9006B6F63 /* ColorPicker.swift */,
 			);
 			path = ColorPicker;
-			sourceTree = "<group>";
-		};
-		DE257F0425EE70A1006B6F63 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				DE257F0525EE70AA006B6F63 /* Coordinates.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		DE257F0825EE7100006B6F63 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				DE257F0925EE7109006B6F63 /* CGRect+Hashable.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,8 +184,6 @@
 			files = (
 				DE257EE025EE59A4006B6F63 /* ContentView.swift in Sources */,
 				DE257EDE25EE59A4006B6F63 /* ChildColorsApp.swift in Sources */,
-				DE257F0625EE70AA006B6F63 /* Coordinates.swift in Sources */,
-				DE257F0A25EE7109006B6F63 /* CGRect+Hashable.swift in Sources */,
 				DE257EFC25EE5BC7006B6F63 /* PlayCanvas.swift in Sources */,
 				DE257EEF25EE59BC006B6F63 /* ColorCell.swift in Sources */,
 				DE257EF825EE5AFF006B6F63 /* Grid.swift in Sources */,
