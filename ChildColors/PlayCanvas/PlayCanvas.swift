@@ -72,7 +72,7 @@ private extension PlayCanvas {
             .purple,
             .white
         ]
-        static let numberOfCells = 5
+        static let numberOfCells = 15
         static let padding: CGFloat = 20
     }
 }
